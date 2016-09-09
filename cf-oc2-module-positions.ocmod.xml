@@ -29,7 +29,7 @@
       <add position="after"><![CDATA[       $setting_info['position'] = 'column_right';]]></add>
     </operation>
   </file>
-  <file path="catalog/controller/module/*.php">
+  <file path="catalog/controller/extension/module/*.php">
     <operation>
       <search><![CDATA[public function index($setting) {]]></search>
       <add position="after" offset="2"><![CDATA[$data['position'] = !empty($setting['position']) ? $setting['position'] : false;]]></add>
